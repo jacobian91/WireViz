@@ -161,6 +161,8 @@ Since the auto-incremented and auto-assigned designator is not known to the user
   show_name: <bool>         # defaults to true
   show_wirecount: <bool>    # defaults to true
   show_wirenumbers: <bool>  # defaults to true for cables; false for bundles
+  show_colorstr: <bool>     # defaults to true
+  show_show_wirelabels: <bool> # defaults to true
 
 ```
 
