@@ -44,6 +44,8 @@ def parse(yaml_input: str, file_out: Union[str, Path] = None, return_types: Opti
     )
     if 'title' not in harness.metadata:
         harness.metadata['title'] = Path(file_out).stem
+    harness.ranksep = yaml_data.get('graph',{}).get('ranksep',None)
+    harness.nodesep = yaml_data.get('graph',{}).get('nodesep',None)
 
     # add items
     sections = ['connectors', 'cables', 'connections']

@@ -29,9 +29,16 @@ additional_bom_items:  # custom items to add to BOM
   - <bom-item>           # BOM item (see below)
   ...
 
+<<<<<<< HEAD
 metadata:  # dictionary of meta-information describing the harness
   <key>   : <value>  # any number of key value pairs (see below)
   ...
+=======
+graph:      # dictionary of graph customization settings
+  <str>   : # custom setting
+
+```
+>>>>>>> 6bf4050 (Add graph ranksep/nodesep to yaml)
 
 options:  # dictionary of common attributes for the whole harness
   <str>   : <value>  # optional harness attributes (see below)
@@ -373,6 +380,15 @@ Alternatively items can be added to just the BOM by putting them in the section 
       # Use null as new value to delete an attribute.
 
   append: <str/list> # string or list of strings to append to the .gv output
+```
+
+## Graph attributes
+
+```yaml
+graph   :
+  ranksep: <int/float>  # Horiz Spacing of connector/cable nodes
+  nodesep: <int/float>  # Vert Spacing of connector/cable nodes
+
 ```
 
 ## Colors
