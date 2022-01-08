@@ -29,16 +29,13 @@ additional_bom_items:  # custom items to add to BOM
   - <bom-item>           # BOM item (see below)
   ...
 
-<<<<<<< HEAD
 metadata:  # dictionary of meta-information describing the harness
   <key>   : <value>  # any number of key value pairs (see below)
   ...
-=======
 graph:      # dictionary of graph customization settings
   <str>   : # custom setting
 
 ```
->>>>>>> 6bf4050 (Add graph ranksep/nodesep to yaml)
 
 options:  # dictionary of common attributes for the whole harness
   <str>   : <value>  # optional harness attributes (see below)
@@ -170,7 +167,7 @@ Since the auto-incremented and auto-assigned designator is not known to the user
   show_wirenumbers: <bool>  # defaults to true for cables; false for bundles
   show_colorstr: <bool>     # defaults to true
   show_show_wirelabels: <bool> # defaults to true
-
+  show_top_line: <bool>     # defaults to true, useful when hiding all cable info to balance node box
 ```
 
 ## Connection sets

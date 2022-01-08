@@ -29,6 +29,7 @@ class Harness:
     tweak: Tweak
     ranksep = None
     nodesep = None
+    cable_top_line = None
 
     def __post_init__(self):
         self.connectors = {}
@@ -243,7 +244,8 @@ class Harness:
 
             wirehtml = []
             wirehtml.append('<table border="0" cellspacing="0" cellborder="0">')  # conductor table
-            wirehtml.append('   <tr><td>&nbsp;</td></tr>')
+            if cable.show_top_line:
+                wirehtml.append('   <tr><td>&nbsp;</td></tr>')
 
             for i, (connection_color, wirelabel) in enumerate(zip_longest(cable.colors, cable.wirelabels), 1):
                 wirehtml.append('   <tr>')

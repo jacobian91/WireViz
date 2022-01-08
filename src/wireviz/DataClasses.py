@@ -230,6 +230,7 @@ class Cable:
     show_name: bool = True
     show_wirecount: bool = True
     show_wirenumbers: Optional[bool] = None
+    show_top_line: bool = True
     show_colorstr: bool = True
     show_wirelabels: bool = True
     ignore_in_bom: bool = False
